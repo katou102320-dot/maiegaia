@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="茨城県石岡市真家から始まる、自然と伝統が交ざり合う新しい共助コミュニティ。あなたの才能（ギフト）を咲かせ、楽しみながら未来の「独立」ネットワークを築こう。">
+  <meta name="robots" content="noindex">
+  <title>真家GAIAホームページ</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- SVG Icons (hidden) -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+    <symbol id="icon-sparkles" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/><path d="M20 3v4"/><path d="M22 5h-4"/><path d="M4 17v2"/><path d="M5 18H3"/></symbol>
+    <symbol id="icon-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+    <symbol id="icon-calendar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="4" rx="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></symbol>
+    <symbol id="icon-trending" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></symbol>
+    <symbol id="icon-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></symbol>
+    <symbol id="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></symbol>
+    <symbol id="icon-wifi" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h.01"/><path d="M2 8.82a15 15 0 0 1 20 0"/><path d="M5 12.859a10 10 0 0 1 14 0"/><path d="M8.5 16.429a5 5 0 0 1 7 0"/></symbol>
+    <symbol id="icon-map-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></symbol>
+    <symbol id="icon-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
+    <symbol id="icon-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+    <symbol id="icon-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></symbol>
+    <symbol id="icon-arrow-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
+    <symbol id="icon-arrow-left" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></symbol>
+    <symbol id="icon-quote" viewBox="0 0 24 24" fill="currentColor"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V21z"/><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3z"/></symbol>
+    <symbol id="icon-sprout" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 20h10"/><path d="M10 20c5.5-2.5.8-6.4 3-10"/><path d="M9.5 9.4c1.1.8 1.8 2.2 2.3 3.7-2 .4-3.5.4-4.8-.3-1.2-.6-2.3-1.9-3-4.2 2.8-.5 4.4 0 5.5.8z"/><path d="M14.1 6a7 7 0 0 0-1.1 4c1.9-.1 3.3-.6 4.3-1.4 1-1 1.6-2.3 1.7-4.6-2.7.1-4 1-4.9 2z"/></symbol>
+    <symbol id="icon-music" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></symbol>
+    <symbol id="icon-network" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="16" y="16" width="6" height="6" rx="1"/><rect x="2" y="16" width="6" height="6" rx="1"/><rect x="9" y="2" width="6" height="6" rx="1"/><path d="M5 16v-3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3"/><path d="M12 12V8"/></symbol>
+    <symbol id="icon-palette" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="13.5" cy="6.5" r=".5" fill="currentColor"/><circle cx="17.5" cy="10.5" r=".5" fill="currentColor"/><circle cx="8.5" cy="7.5" r=".5" fill="currentColor"/><circle cx="6.5" cy="12.5" r=".5" fill="currentColor"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"/></symbol>
+    <symbol id="icon-trees" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 10v.2A3 3 0 0 1 8.9 16H5a3 3 0 0 1-1-5.8V10a3 3 0 0 1 6 0Z"/><path d="M7 16v6"/><path d="M13 19v3"/><path d="M12 19h8.3a1 1 0 0 0 .7-1.7L18 14h.3a1 1 0 0 0 .7-1.7L16 9h.2a1 1 0 0 0 .8-1.7L13 3l-1.4 1.5"/></symbol>
+    <symbol id="icon-handshake" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m11 17 2 2a1 1 0 1 0 3-3"/><path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4"/><path d="m21 3 1 11h-2"/><path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3"/><path d="M3 4h8"/></symbol>
+  </svg>
+
+  <!-- ========== HOME PAGE ========== -->
+  <div id="page-home" class="page-view is-active">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero__bg"></div>
+      <div class="hero__content container">
+        <div class="hero__grid">
+          <div>
+            <div class="hero__badge">
+              <svg class="icon icon--lg" style="color:var(--color-accent)"><use href="#icon-sparkles"/></svg>
+              <span class="hero__badge-text">真家GAIA - Gift Link Maie</span>
+            </div>
+            <h1 class="hero__title">
+              私たちが<span class="highlight">透明な土壌</span>（GAIA）になる。<br>
+              <span class="accent">あなたの「色」が、<br>世界で一番輝く場所へ。</span>
+            </h1>
+            <p class="hero__desc">
+              茨城県石岡市真家から始まる、自然と伝統が交ざり合う新しい共助コミュニティ。<br>
+              あなたの才能（ギフト）を咲かせ、楽しみながら未来の「独立」ネットワークを築こう。
+            </p>
+            <div class="hero__actions">
+              <button type="button" class="btn btn--primary btn--lg btn--full btn--full-md-auto" data-route="/apply">真家GAIAコミュニティに申し込む</button>
+              <button type="button" class="btn btn--outline btn--lg btn--full btn--full-md-auto" data-line>無料トライアル（公式LINE登録）</button>
+            </div>
+            <p class="hero__note">
+              <span class="hero__note-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span>
+              いつでもオンラインで解約可能 | 農業や太鼓の経験は一切不要です
+            </p>
+          </div>
+          <div>
+            <div class="hero__image-wrap">
+              <img src="assets/images/image-9.7c459662.png" alt="真家GAIAコミュニティの仲間たち" width="640" height="480">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Bar -->
+    <section class="stats-bar">
+      <div class="container">
+        <div class="stats-bar__grid">
+          <div class="stat-item">
+            <div class="stat-item__icon"><svg class="icon"><use href="#icon-users"/></svg></div>
+            <div><div class="stat-item__value">10+</div><div class="stat-item__label">現在の参加者数</div></div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-item__icon"><svg class="icon"><use href="#icon-calendar"/></svg></div>
+            <div><div class="stat-item__value">20代〜70代</div><div class="stat-item__label">多様な世代が活躍</div></div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-item__icon"><svg class="icon"><use href="#icon-trending"/></svg></div>
+            <div><div class="stat-item__value">98%</div><div class="stat-item__label">満足度</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Problems -->
+    <section class="section problems">
+      <div class="container">
+        <div class="section__header">
+          <h2 class="section__title section__title--md">こんなモヤモヤを抱えていませんか?</h2>
+          <p class="section__subtitle">都会の忙しさや、つながりの希薄さに疲れているあなたへ</p>
+        </div>
+        <div class="problems__grid">
+          <div class="problem-card"><div class="problem-card__icon"><svg class="icon"><use href="#icon-x"/></svg></div><p>自分の中に「やりたいこと」はあるが、形にするきっかけがない</p></div>
+          <div class="problem-card"><div class="problem-card__icon"><svg class="icon"><use href="#icon-x"/></svg></div><p>損得勘定のない、温かくて自立した繋がり（コミュニティ）が欲しい</p></div>
+          <div class="problem-card"><div class="problem-card__icon"><svg class="icon"><use href="#icon-x"/></svg></div><p>何かに依存するのではなく、自分の足で立つ力（独立・自立）を身につけたい</p></div>
+          <div class="problem-card"><div class="problem-card__icon"><svg class="icon"><use href="#icon-x"/></svg></div><p>世代を超えて笑い合えるリアルな居場所がない</p></div>
+        </div>
+        <div class="problems__scroll">
+          <div>
+            <p class="problems__scroll-hint">ここから未来が開ける</p>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3"/></svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Solutions -->
+    <section class="section solutions">
+      <div class="container">
+        <div class="section__header">
+          <div class="badge"><svg class="icon" style="color:var(--color-main)"><use href="#icon-sparkles"/></svg><span>真家GAIAの解決策</span></div>
+          <h2 class="section__title">すべての答えが、ここにあります</h2>
+          <p class="section__subtitle">モヤモヤから解放され、自分の色を咲かせる場所</p>
+        </div>
+        <div class="solutions__grid">
+          <div class="solution-card"><div class="solution-card__check"><svg><use href="#icon-check"/></svg></div><p>透明な舞台で、あなたの才能（ギフト）を自由に表現できる環境</p></div>
+          <div class="solution-card"><div class="solution-card__check"><svg><use href="#icon-check"/></svg></div><p>損得勘定なく、純粋に楽しさを共有できる温かいコミュニティ</p></div>
+          <div class="solution-card"><div class="solution-card__check"><svg><use href="#icon-check"/></svg></div><p>農業・太鼓・伝統文化を通じた実践的な自立スキルの習得</p></div>
+          <div class="solution-card"><div class="solution-card__check"><svg><use href="#icon-check"/></svg></div><p>世代を超えた多様な仲間との、リアルで深いつながり</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trust -->
+    <section class="section section--lg">
+      <div class="container">
+        <div class="section__header">
+          <h2 class="section__title" style="font-size:2.25rem">すでに多くの仲間がここで自分の色を見つけています</h2>
+          <p class="section__subtitle">実績と信頼の真家GAIAコミュニティ</p>
+        </div>
+        <div class="trust__stats">
+          <div class="trust-card"><div class="trust-card__icon-wrap"><svg><use href="#icon-users"/></svg></div><div class="trust-card__value">10+</div><div class="trust-card__label">コミュニティ参加者数</div><div class="trust-card__desc">多様な仲間たち</div></div>
+          <div class="trust-card"><div class="trust-card__icon-wrap"><svg><use href="#icon-sprout"/></svg></div><div class="trust-card__value">10種類以上</div><div class="trust-card__label">体験プログラム</div><div class="trust-card__desc">太鼓作成・果樹栽培・無農薬野菜づくりなど</div></div>
+          <div class="trust-card"><div class="trust-card__icon-wrap"><svg><use href="#icon-handshake"/></svg></div><div class="trust-card__value">4社</div><div class="trust-card__label">提携パートナー</div><div class="trust-card__desc">協力団体・地域プロジェクト</div></div>
+          <div class="trust-card"><div class="trust-card__icon-wrap"><svg><use href="#icon-trending"/></svg></div><div class="trust-card__value">98%</div><div class="trust-card__label">独立サポート満足度</div><div class="trust-card__desc">充実したサポート体制</div></div>
+        </div>
+        <div class="partners">
+          <h3 class="partners__title">連携パートナー</h3>
+          <div class="partners__grid">
+            <a href="https://unkioshiage-necoghinja.com/" target="_blank" rel="noopener noreferrer" class="partner-card">
+              <div class="partner-card__box"><div class="partner-card__logo"><img src="assets/images/image-3.7c2996b1.png" alt="運気押上猫神社"></div><span class="partner-card__name">運気押上猫神社</span><span class="partner-card__desc">福を招く猫神社</span></div>
+            </a>
+            <a href="https://www.donkame.net/" target="_blank" rel="noopener noreferrer" class="partner-card">
+              <div class="partner-card__box"><div class="partner-card__emoji">🐢</div><span class="partner-card__name">ドンカメ</span><span class="partner-card__desc">地域コミュニティ</span></div>
+            </a>
+            <a href="https://nyannyanji22.www2.jp/" target="_blank" rel="noopener noreferrer" class="partner-card">
+              <div class="partner-card__box"><div class="partner-card__logo"><img src="assets/images/image-2.c41f2ff0.png" alt="猫猫寺"></div><span class="partner-card__name">猫猫寺</span><span class="partner-card__desc">猫寺コミュニティ</span></div>
+            </a>
+            <a href="http://media-99.org/" target="_blank" rel="noopener noreferrer" class="partner-card">
+              <div class="partner-card__box"><div class="partner-card__logo"><img src="assets/images/image-5.c28f4d45.png" alt="Media.99"></div><span class="partner-card__name">Media.99</span><span class="partner-card__desc">メディアプラットフォーム</span></div>
+            </a>
+          </div>
+          <p class="partners__note">※ クリックすると各パートナーのWebサイトへ移動します</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Steps -->
+    <section class="section section--lg steps">
+      <div class="container">
+        <div class="section__header">
+          <div class="steps__badge"><span>簡単3ステップ</span></div>
+          <h2 class="section__title">参加から独立まで</h2>
+          <p class="section__subtitle">「簡単に仲間に」「すぐ自分のやりたいことが見つかる」</p>
+        </div>
+        <div class="steps__grid">
+          <div class="step-card">
+            <div class="step-card__number" style="color:var(--color-main-light)">01</div>
+            <div class="step-card__icon" style="background:var(--color-main-light)"><svg><use href="#icon-wifi"/></svg></div>
+            <h3 class="step-card__title">オンラインで繋がる</h3>
+            <p class="step-card__desc">無料登録でコミュニティの熱量に触れる。まずはオンラインミーティングやチャットで仲間と交流し、真家GAIAの雰囲気を体感しましょう。</p>
+            <div class="step-card__arrow"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+          </div>
+          <div class="step-card">
+            <div class="step-card__number" style="color:var(--color-main)">02</div>
+            <div class="step-card__icon" style="background:var(--color-main)"><svg><use href="#icon-map-pin"/></svg></div>
+            <h3 class="step-card__title">真家で「楽しい」を体験する</h3>
+            <p class="step-card__desc">農業や太鼓を通じたリアルな交流。実際に真家の地で土に触れ、太鼓を叩き、仲間と笑い合う。理屈抜きの「楽しい」があなたを待っています。</p>
+            <div class="step-card__arrow"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+          </div>
+          <div class="step-card">
+            <div class="step-card__number" style="color:var(--color-accent)">03</div>
+            <div class="step-card__icon" style="background:var(--color-accent)"><svg><use href="#icon-sparkles"/></svg></div>
+            <h3 class="step-card__title">ギフトを咲かせ、独立する</h3>
+            <p class="step-card__desc">自分の得意をコミュニティに還元し、自立した個になる。あなたの才能が誰かの喜びとなり、共助のネットワークが未来への強さに変わります。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Banner -->
+    <section class="banner">
+      <div class="banner__img">
+        <img src="https://images.unsplash.com/photo-1767519818612-b953e5cf14b5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1920" alt="和太鼓演奏の様子">
+        <div class="banner__overlay"></div>
+      </div>
+      <div class="banner__content">
+        <div class="banner__box">
+          <h3 class="banner__title">真家の自然と文化が、<br>あなたを待っています</h3>
+          <p style="color:var(--color-main);font-size:1rem">五感で感じる、本物の体験</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Activities -->
+    <section id="activities" class="section section--lg activities">
+      <div class="container">
+        <div class="section__header">
+          <h2 class="section__title">真家GAIAでできること</h2>
+          <p class="section__subtitle">4つの活動を通じて、あなたの「色」を見つける</p>
+        </div>
+        <div class="activities__grid">
+          <div class="activity-card">
+            <div class="activity-card__icon" style="background:var(--color-accent)"><svg><use href="#icon-palette"/></svg></div>
+            <h3 class="activity-card__title">透明な舞台での自己表現</h3>
+            <p class="activity-card__desc">あなたのギフトを形にする。</p>
+            <div class="activity-card__line" style="background:var(--color-accent)"></div>
+          </div>
+          <div class="activity-card">
+            <div class="activity-card__icon" style="background:var(--color-main)"><svg><use href="#icon-sprout"/></svg></div>
+            <h3 class="activity-card__title">里山農業・果樹栽培</h3>
+            <p class="activity-card__desc">土に触れ、生きる根幹を学ぶ。</p>
+            <div class="activity-card__line" style="background:var(--color-main)"></div>
+          </div>
+          <div class="activity-card">
+            <div class="activity-card__icon" style="background:var(--color-main-dark)"><svg><use href="#icon-music"/></svg></div>
+            <h3 class="activity-card__title">和太鼓・伝統文化</h3>
+            <p class="activity-card__desc">心拍を合わせ、理屈抜きの楽しさを共有。</p>
+            <div class="activity-card__line" style="background:var(--color-main-dark)"></div>
+          </div>
+          <div class="activity-card">
+            <div class="activity-card__icon" style="background:var(--color-main-light)"><svg><use href="#icon-network"/></svg></div>
+            <h3 class="activity-card__title">独立ネットワークの構築</h3>
+            <p class="activity-card__desc">いざという時のサバイバル・共助スキル。</p>
+            <div class="activity-card__line" style="background:var(--color-main-light)"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="section section--lg features">
+      <div class="container">
+        <div class="section__header">
+          <h2 class="section__title">真家GAIAならではの特長</h2>
+          <p class="section__subtitle">他にはない3つの強み</p>
+        </div>
+        <div class="feature-row">
+          <div class="feature-row__text">
+            <div class="feature-row__label"><div class="feature-row__label-icon"><svg><use href="#icon-palette"/></svg></div><span class="feature-row__label-text">FEATURE 01</span></div>
+            <h3 class="feature-row__title">透明な舞台による「表現の解放」</h3>
+            <p class="feature-row__desc">型にはめない自由な活動環境で、本当の自分を表現できます。損得勘定なく、純粋にやりたいことに挑戦できる場所。誰かの評価ではなく、自分の心が喜ぶことを追求できます。</p>
+          </div>
+          <div class="feature-row__image"><img src="assets/images/image-6.8dbaaa58.png" alt="透明な舞台による表現の解放"></div>
+        </div>
+        <div class="feature-row feature-row--reverse">
+          <div class="feature-row__text">
+            <div class="feature-row__label"><div class="feature-row__label-icon"><svg><use href="#icon-trees"/></svg></div><span class="feature-row__label-text">FEATURE 02</span></div>
+            <h3 class="feature-row__title">豊かな自然と伝統文化のリアル体験</h3>
+            <p class="feature-row__desc">茨城県石岡市真家の里山で、五感すべてを使った体験ができます。農業、太鼓、季節の行事など、デジタルでは得られない本物の感動と学びがあります。</p>
+          </div>
+          <div class="feature-row__image"><img src="assets/images/image-7.599ca4c7.png" alt="豊かな自然と伝統文化のリアル体験"></div>
+        </div>
+        <div class="feature-row">
+          <div class="feature-row__text">
+            <div class="feature-row__label"><div class="feature-row__label-icon"><svg><use href="#icon-handshake"/></svg></div><span class="feature-row__label-text">FEATURE 03</span></div>
+            <h3 class="feature-row__title">「楽しい」から育つ一億人の独立ネットワーク</h3>
+            <p class="feature-row__desc">義務感ではなく、純粋な楽しさから生まれる強いつながり。お互いの才能を認め合い、支え合う関係性。いざという時に頼れる、依存しない独立した個の集まりです。</p>
+          </div>
+          <div class="feature-row__image"><img src="assets/images/image-4.bd7059ee.png" alt="独立ネットワーク"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mid CTA -->
+    <section class="section mid-cta">
+      <div class="container">
+        <div class="mid-cta__box">
+          <div>
+            <div class="mid-cta__label"><svg class="icon" style="color:var(--color-accent)"><use href="#icon-sparkles"/></svg><span>今すぐ始める</span></div>
+            <h3 class="mid-cta__title">あなたの「色」を咲かせる準備はできましたか?</h3>
+            <p style="color:var(--color-main);font-size:1rem">真家GAIAで、楽しみながら自立への一歩を踏み出しましょう</p>
+          </div>
+          <div class="mid-cta__actions">
+            <button type="button" class="btn btn--primary btn--lg btn--full" data-route="/apply">コミュニティに参加する <svg class="icon"><use href="#icon-arrow-right"/></svg></button>
+            <p class="form-note" style="margin-top:0.75rem">※まずは公式LINE登録から</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="section section--lg">
+      <div class="container">
+        <div class="section__header">
+          <h2 class="section__title">仲間たちの声</h2>
+          <p class="section__subtitle">真家GAIAで自分の色を見つけた人たち</p>
+        </div>
+        <div class="testimonials__grid">
+          <div class="testimonial-card">
+            <div class="testimonial-card__quote-icon" style="background:var(--color-main)"><svg><use href="#icon-quote"/></svg></div>
+            <div class="testimonial-card__avatar-wrap">
+              <div class="testimonial-card__avatar" style="border-color:var(--color-main)"><img src="assets/images/image-1.27eb898c.png" alt="加藤 大貴さん"></div>
+              <div class="testimonial-card__profile">30代・会社員</div>
+              <div class="testimonial-card__name">加藤 大貴さん</div>
+            </div>
+            <div class="testimonial-card__label">参加前の悩み</div>
+            <p class="testimonial-card__text">会社の事業失敗により、自分の人生とはいったい何なのか？と悩んでいました。</p>
+            <div class="testimonial-card__divider" style="background:var(--color-main)"></div>
+            <div class="testimonial-card__label">参加後の変化</div>
+            <p class="testimonial-card__text testimonial-card__text--after">自分の興味のあるAIでほかの方に喜んでもらえることが喜びとなりました。また、太鼓づくりも仲間たちから教えてもらい、喜びが実感できる場所に出逢えました。</p>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-card__quote-icon" style="background:var(--color-accent)"><svg><use href="#icon-quote"/></svg></div>
+            <div class="testimonial-card__avatar-wrap">
+              <div class="testimonial-card__avatar" style="border-color:var(--color-accent)"><img src="assets/images/image-8.8e1cd4d1.png" alt="大野 理恵さん"></div>
+              <div class="testimonial-card__profile">50代・フリーランス</div>
+              <div class="testimonial-card__name">大野 理恵さん</div>
+            </div>
+            <div class="testimonial-card__label">参加前の悩み</div>
+            <p class="testimonial-card__text">真家に来る前の私は、「一人で頑張ること」が当たり前でした。誰かに頼るよりも、一人でいる方が楽だと思い、何でも自分で抱え込み、力を入れて生きていたように思います。</p>
+            <div class="testimonial-card__divider" style="background:var(--color-accent)"></div>
+            <div class="testimonial-card__label">参加後の変化</div>
+            <p class="testimonial-card__text testimonial-card__text--after">真家に来てからは、お互いの好きなことや得意なことを自然に活かし合いながら、調和して暮らす喜びを知りました。自分の"好き"を思いきり表現できること。そして、それを共に喜び合える仲間がいること。一人では見ることのできなかった景色や可能性が、仲間と共にいることで、より深く、豊かに広がっているのを感じています。</p>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-card__quote-icon" style="background:var(--color-main-light)"><svg><use href="#icon-quote"/></svg></div>
+            <div class="testimonial-card__avatar-wrap">
+              <div class="testimonial-card__avatar" style="border-color:var(--color-main-light)"><img src="assets/images/image-10.d6b3bff6.png" alt="岡﨑 愛偉さん"></div>
+              <div class="testimonial-card__profile">20代・フリーランス</div>
+              <div class="testimonial-card__name">岡﨑 愛偉さん</div>
+            </div>
+            <div class="testimonial-card__label">参加前の悩み</div>
+            <p class="testimonial-card__text">人の目が気になり、自分に嘘をついて生きていることに疲れていました。本当の自分が分からなくなり、自分は何をしたいのかも見失っていました。</p>
+            <div class="testimonial-card__divider" style="background:var(--color-main-light)"></div>
+            <div class="testimonial-card__label">参加後の変化</div>
+            <p class="testimonial-card__text testimonial-card__text--after">自然体な自分がどんなものかを知ることができ、自分の世界を自由に楽しく見られるようになりました！何が起きても感謝しながら楽しめるようになり、今の自分のことを大好きだと思えるようになりました。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="section section--lg pricing">
+      <div class="container">
+        <div class="section__header">
+          <h2 class="section__title">料金プラン</h2>
+          <p class="section__subtitle">あなたに合った参加スタイルを選べます</p>
+        </div>
+        <div class="pricing__grid">
+          <div class="price-card">
+            <h3 class="price-card__name">トライアル</h3>
+            <p class="price-card__desc">まずは気軽にコミュニティを体験</p>
+            <div class="price-card__price"><span class="price-card__amount" style="color:var(--color-main)">無料</span></div>
+            <ul class="price-card__features">
+              <li><span class="price-card__check" style="background:var(--color-main)"><svg><use href="#icon-check"/></svg></span>オンラインミーティング参加</li>
+              <li><span class="price-card__check" style="background:var(--color-main)"><svg><use href="#icon-check"/></svg></span>コミュニティチャットアクセス</li>
+              <li><span class="price-card__check" style="background:var(--color-main)"><svg><use href="#icon-check"/></svg></span>月1回の体験イベント招待</li>
+              <li><span class="price-card__check" style="background:var(--color-main)"><svg><use href="#icon-check"/></svg></span>メンバー限定コンテンツ閲覧</li>
+            </ul>
+            <button type="button" class="btn btn--outline btn--lg btn--full" data-line>無料で始める</button>
+            <p class="form-note">※いつでもオンラインで解約可能です</p>
+          </div>
+          <div class="price-card price-card--highlight">
+            <div class="price-card__badge"><svg class="icon" style="width:1rem;height:1rem"><use href="#icon-sparkles"/></svg> 人気No.1</div>
+            <h3 class="price-card__name">スタンダード</h3>
+            <p class="price-card__desc">本格的に活動したい方向け</p>
+            <div class="price-card__price"><span class="price-card__amount" style="color:var(--color-accent)">¥15,000</span><span class="price-card__period">/月</span></div>
+            <ul class="price-card__features">
+              <li><span class="price-card__check" style="background:var(--color-accent)"><svg><use href="#icon-check"/></svg></span>トライアルの全機能</li>
+              <li><span class="price-card__check" style="background:var(--color-accent)"><svg><use href="#icon-check"/></svg></span>真家拠点の利用可能</li>
+              <li><span class="price-card__check" style="background:var(--color-accent)"><svg><use href="#icon-check"/></svg></span>全ての体験プログラム参加</li>
+              <li><span class="price-card__check" style="background:var(--color-accent)"><svg><use href="#icon-check"/></svg></span>農業・太鼓など実践活動</li>
+              <li><span class="price-card__check" style="background:var(--color-accent)"><svg><use href="#icon-check"/></svg></span>収穫物のシェア</li>
+              <li><span class="price-card__check" style="background:var(--color-accent)"><svg><use href="#icon-check"/></svg></span>独立支援プログラム</li>
+            </ul>
+            <button type="button" class="btn btn--primary btn--lg btn--full" data-route="/apply">スタンダードに申し込む</button>
+            <p class="form-note">※いつでもオンラインで解約可能です</p>
+          </div>
+          <div class="price-card">
+            <h3 class="price-card__name">サポーター</h3>
+            <p class="price-card__desc">コミュニティを支援したい方・法人向け</p>
+            <div class="price-card__price"><span class="price-card__amount" style="color:var(--color-main-dark)">¥30,000</span><span class="price-card__period">/月</span></div>
+            <ul class="price-card__features">
+              <li><span class="price-card__check" style="background:var(--color-main-dark)"><svg><use href="#icon-check"/></svg></span>スタンダードの全機能</li>
+              <li><span class="price-card__check" style="background:var(--color-main-dark)"><svg><use href="#icon-check"/></svg></span>専用スペース利用権</li>
+              <li><span class="price-card__check" style="background:var(--color-main-dark)"><svg><use href="#icon-check"/></svg></span>イベント企画・運営参加</li>
+              <li><span class="price-card__check" style="background:var(--color-main-dark)"><svg><use href="#icon-check"/></svg></span>法人向けチームビルディング</li>
+              <li><span class="price-card__check" style="background:var(--color-main-dark)"><svg><use href="#icon-check"/></svg></span>オリジナルプログラム開発</li>
+              <li><span class="price-card__check" style="background:var(--color-main-dark)"><svg><use href="#icon-check"/></svg></span>優先サポート</li>
+            </ul>
+            <button type="button" class="btn btn--outline btn--lg btn--full" data-route="/apply">サポーターに申し込む</button>
+            <p class="form-note">※いつでもオンラインで解約可能です</p>
+          </div>
+        </div>
+        <p class="pricing__note">全プラン、初月は日割り計算となります。いつでもプラン変更・解約が可能です。</p>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section section--lg">
+      <div class="container">
+        <div class="section__header">
+          <h2 class="section__title">よくあるご質問</h2>
+          <p class="section__subtitle">真家GAIAについて、よくお寄せいただく質問</p>
+        </div>
+        <div class="faq__list">
+          <div class="faq-item">
+            <button type="button" class="faq-item__trigger">トライアル期間について教えてください<svg class="faq-item__chevron"><use href="#icon-chevron"/></svg></button>
+            <div class="faq-item__content"><p class="faq-item__answer">トライアルプランは期限なく無料でご利用いただけます。オンラインでのコミュニティ体験や月1回のイベント参加を通じて、真家GAIAの雰囲気を十分に感じていただけます。ご自身のタイミングで有料プランへの移行をご検討ください。</p></div>
+          </div>
+          <div class="faq-item">
+            <button type="button" class="faq-item__trigger">農業や太鼓の経験がなくても大丈夫ですか?<svg class="faq-item__chevron"><use href="#icon-chevron"/></svg></button>
+            <div class="faq-item__content"><p class="faq-item__answer">全く問題ありません。真家GAIAでは、初心者の方でも安心して参加できるよう、経験豊富なメンバーや地元の専門家がサポートします。「楽しい」を一番大切にしているので、技術よりもまず体験することから始めましょう。</p></div>
+          </div>
+          <div class="faq-item">
+            <button type="button" class="faq-item__trigger">仕事が忙しくて頻繁に参加できないのですが...<svg class="faq-item__chevron"><use href="#icon-chevron"/></svg></button>
+            <div class="faq-item__content"><p class="faq-item__answer">ご自身のペースで大丈夫です。月に1回の参加でも、オンラインのみの参加でも、コミュニティの一員として歓迎します。無理なく続けられることが一番大切。参加頻度よりも、「楽しい」と感じられるかどうかを重視しています。</p></div>
+          </div>
+          <div class="faq-item">
+            <button type="button" class="faq-item__trigger">茨城県外からの参加は可能ですか?<svg class="faq-item__chevron"><use href="#icon-chevron"/></svg></button>
+            <div class="faq-item__content"><p class="faq-item__answer">はい、可能です。実際に東京や神奈川など関東圏から通っているメンバーも多くいます。オンライン参加も可能ですし、月に数回のリアル参加でも十分にコミュニティを楽しめます。自分のペースで無理なく続けられる環境です。</p></div>
+          </div>
+          <div class="faq-item">
+            <button type="button" class="faq-item__trigger">「独立ネットワーク」とは具体的に何ですか?<svg class="faq-item__chevron"><use href="#icon-chevron"/></svg></button>
+            <div class="faq-item__content"><p class="faq-item__answer">お互いの才能やスキルを活かし合い、依存せずに支え合えるコミュニティのことです。例えば、農業の知識を持つ人、建築スキルがある人、ITに強い人など、多様な個性が集まることで、いざという時（災害時や個人の困りごと）に助け合える実践的なネットワークを指します。</p></div>
+          </div>
+          <div class="faq-item">
+            <button type="button" class="faq-item__trigger">子供連れでも参加できますか?<svg class="faq-item__chevron"><use href="#icon-chevron"/></svg></button>
+            <div class="faq-item__content"><p class="faq-item__answer">もちろんです！むしろ、世代を超えた交流を大切にしています。自然の中での活動は子供たちにとっても貴重な体験になります。安全面にも配慮していますので、安心してご家族でご参加ください。</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta">
+      <div class="final-cta__glow1"></div>
+      <div class="final-cta__glow2"></div>
+      <div class="container final-cta__inner">
+        <h2 class="final-cta__title">何かに依存するのではなく、<br>自分の足で立ち、<br>仲間と笑い合える未来へ。</h2>
+        <p class="final-cta__desc">あなたの才能（ギフト）が、誰かの喜びになる。<br>透明な土壌で、あなただけの色を咲かせよう。</p>
+        <div class="final-cta__actions">
+          <button type="button" class="btn btn--white btn--lg btn--full btn--full-md-auto" data-line>まずは無料でコミュニティを覗く</button>
+          <button type="button" class="btn btn--white-outline btn--lg btn--full btn--full-md-auto" data-route="/apply">GAIAメンバーに申し込む <svg class="icon"><use href="#icon-arrow-right"/></svg></button>
+        </div>
+        <p class="final-cta__note">※農業やITの知識は一切不要です｜月1回の参加でもOK｜いつでも解約可能</p>
+        <div class="final-cta__dots">
+          <div class="final-cta__dot" style="background:var(--color-accent)"></div>
+          <div class="final-cta__dot" style="background:var(--color-main-light)"></div>
+          <div class="final-cta__dot" style="background:#fff"></div>
+          <div class="final-cta__dot" style="background:var(--color-accent)"></div>
+          <div class="final-cta__dot" style="background:var(--color-main-light)"></div>
+          <div class="final-cta__dot" style="background:#fff"></div>
+          <div class="final-cta__dot" style="background:var(--color-accent)"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__grid">
+          <div class="footer__brand">
+            <h3 class="footer__title">Gift Link Maie<br><span>真家GAIA</span></h3>
+            <p class="footer__desc">透明な土壌となり、一人ひとりの才能（ギフト）を咲かせる共助コミュニティ。 茨城県石岡市真家から、新しい独立ネットワークを築きます。</p>
+            <div class="footer__address">
+              <svg class="icon"><use href="#icon-map-pin"/></svg>
+              <div><div style="font-weight:600;color:#fff;margin-bottom:0.25rem">運営拠点</div><div>茨城県石岡市真家２５０２－３４８　スカイコート</div></div>
+            </div>
+          </div>
+          <div class="footer__nav">
+            <h4 class="footer__heading">ナビゲーション</h4>
+            <ul class="footer__links">
+              <li><a href="#activities">活動内容</a></li>
+              <li><a href="#pricing">プランと料金</a></li>
+              <li><a href="#testimonials">仲間の声</a></li>
+              <li><a href="#faq">FAQ</a></li>
+              <li><a href="#/apply" data-route="/apply">参加申し込み</a></li>
+            </ul>
+          </div>
+          <div class="footer__contact">
+            <h4 class="footer__heading">お問い合わせ</h4>
+            <div class="footer__contact-item"><svg class="icon"><use href="#icon-mail"/></svg><a href="mailto:gc.gaia999@gmail.com">gc.gaia999@gmail.com</a></div>
+            <div class="footer__contact-item"><svg class="icon"><use href="#icon-phone"/></svg><a href="tel:080-6022-4741">080-6022-4741</a></div>
+          </div>
+          <div class="footer__sns">
+            <h4 class="footer__heading">SNS</h4>
+            <div class="footer__sns-btns">
+              <a href="https://lin.ee/zU1YB6E" target="_blank" rel="noopener noreferrer" class="footer__sns-btn">LINE</a>
+              <a href="https://www.instagram.com/maiegaia?igsh=MTZ1em5taGZkZWNhbg%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" class="footer__sns-btn">IG</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p class="footer__copyright">© 2026 Gift Link Maie / 真家GAIA. All rights reserved.</p>
+          <div class="footer__legal">
+            <a href="#/terms" data-route="/terms">利用規約</a>
+            <a href="#/privacy" data-route="/privacy">プライバシーポリシー</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- ========== TERMS PAGE ========== -->
+  <div id="page-terms" class="page-view sub-page">
+    <header class="sub-header"><div class="container sub-header__inner">        <a href="#/" class="logo" data-route="/"><span class="hidden-mobile">Gift Link Maie </span><span class="logo__accent">真家GAIA</span></a></div></header>
+    <main class="sub-page__main">
+      <div class="sub-page__content">
+        <h1 class="sub-page__title">利用規約</h1>
+        <div class="legal-card" id="terms-content"></div>
+        <div class="sub-page__back"><a href="#/" class="btn btn--primary" data-route="/">トップページに戻る</a></div>
+      </div>
+    </main>
+  </div>
+
+  <!-- ========== PRIVACY PAGE ========== -->
+  <div id="page-privacy" class="page-view sub-page">
+    <header class="sub-header"><div class="container sub-header__inner">        <a href="#/" class="logo" data-route="/"><span class="hidden-mobile">Gift Link Maie </span><span class="logo__accent">真家GAIA</span></a></div></header>
+    <main class="sub-page__main">
+      <div class="sub-page__content">
+        <h1 class="sub-page__title">プライバシーポリシー</h1>
+        <div class="legal-card" id="privacy-content"></div>
+        <div class="sub-page__back"><a href="#/" class="btn btn--primary" data-route="/">トップページに戻る</a></div>
+      </div>
+    </main>
+  </div>
+
+  <!-- ========== APPLY PAGE ========== -->
+  <div id="page-apply" class="page-view sub-page">
+    <header class="sub-header">
+      <div class="container sub-header__inner">
+        <a href="#/" class="logo" data-route="/"><span class="hidden-mobile">Gift Link Maie </span><span class="logo__accent">真家GAIA</span></a>
+        <a href="#/" class="back-link" data-route="/"><svg class="icon"><use href="#icon-arrow-left"/></svg>トップページに戻る</a>
+      </div>
+    </header>
+    <div id="apply-form-view">
+      <main class="sub-page__main">
+        <div class="apply-form-wrap">
+          <div class="apply-page__header">
+            <h1 class="sub-page__title">真家GAIAコミュニティ 参加申し込み</h1>
+            <p style="color:var(--color-main)">以下のフォームに必要事項をご記入の上、送信してください</p>
+          </div>
+          <div class="form-card">
+            <form id="apply-form">
+              <div class="form-group"><label>お名前 <span class="required">*</span></label><input type="text" name="name" required placeholder="山田 太郎"></div>
+              <div class="form-group"><label>メールアドレス <span class="required">*</span></label><input type="email" name="email" required placeholder="example@email.com"></div>
+              <div class="form-group"><label>電話番号 <span class="required">*</span></label><input type="tel" name="phone" required placeholder="090-1234-5678"></div>
+              <div class="form-group"><label>生年月日 <span class="required">*</span></label><input type="date" name="birthDate" required></div>
+              <div class="form-group"><label>ご住所 <span class="required">*</span></label><input type="text" name="address" required placeholder="東京都渋谷区〇〇 1-2-3"></div>
+              <div class="form-group">
+                <label>参加プラン <span class="required">*</span></label>
+                <select name="plan" required>
+                  <option value="スタンダード">スタンダード（¥15,000/月）</option>
+                  <option value="サポーター">サポーター（¥30,000/月）</option>
+                </select>
+                <p class="form-group__hint">※トライアルプランをご希望の方は、<a href="https://lin.ee/zU1YB6E" target="_blank" rel="noopener noreferrer">公式LINE</a>よりご登録ください</p>
+              </div>
+              <div class="form-group"><label>ご質問・ご要望など（任意）</label><textarea name="message" placeholder="真家GAIAへの参加動機や、ご質問などがあればご記入ください"></textarea></div>
+              <label class="form-checkbox"><input type="checkbox" required><span><a href="#/privacy" data-route="/privacy">プライバシーポリシー</a>に同意します <span class="required">*</span></span></label>
+              <button type="submit" class="btn btn--primary btn--lg btn--full">申し込み内容を送信する</button>
+              <p class="form-note">送信後、担当者より3営業日以内にご連絡いたします</p>
+            </form>
+          </div>
+        </div>
+      </main>
+    </div>
+    <div id="apply-success-view" class="success-view hidden">
+      <div class="success-view__inner">
+        <div class="success-view__icon"><svg><use href="#icon-check"/></svg></div>
+        <h2>お申し込みありがとうございます</h2>
+        <p>ご入力いただいた情報を確認の上、担当者よりご連絡させていただきます。</p>
+        <p class="success-view__sub">まもなくトップページに戻ります...</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating CTA -->
+  <div id="floating-cta" class="floating-cta">
+    <button type="button" class="btn btn--accent btn--lg" data-line>
+      <span class="floating-cta__text-full">無料でコミュニティを覗く</span>
+      <span class="floating-cta__text-short">無料で参加</span>
+      <svg class="icon"><use href="#icon-arrow-right"/></svg>
+    </button>
+  </div>
+
+  <script src="js/legal-content.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
